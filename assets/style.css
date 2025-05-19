@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", "sans-serif";
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: white;
+    position: sticky;
+    top:0;
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 0.8rem;
+    padding-block: 0.2rem;
+}
+
+.links-header {
+    display: flex;
+    gap: 0.5rem;
+    font-weight: 300;
+}
+.links-header li {
+    list-style: none;
+}
+
+.links-header li a {
+    color:black;
+    text-decoration: none;
+}
+
+#banner-principal{
+    background-image: url('/assets/img/banner.png');
+    height: 90dvh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#banner-principal h1 {
+    height: fit-content;
+    font-family: "Italiana", "Lato", "sans-serif";
+    margin-left: 8rem;
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+#gradient {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(0deg,rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    height: 20%;
+}
+
+.conteudo {
+    margin-top: 2rem;
+    margin-inline: 8rem;
+}
+
+#sobre p {
+    margin-inline: 2rem;
+}
+
+h2 {
+    font-family: "Italiana";
+    font-size: 2.5rem;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.destaques {
+    display: flex;
+    height: 50vh;
+    gap:3rem;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.destaques li {
+    display: flex;
+}
+
+
+.destaques li img{
+    object-fit: cover;
+    
+}
+.galeria {
+    display: grid;
+    
+}
+.galeria img {
+    object-fit: cover;
+}
