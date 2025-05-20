@@ -103,8 +103,39 @@ p {
 }
 .galeria {
     display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 5vw);
+    gap: 0.5rem;
     
 }
 .galeria img {
     object-fit: cover;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.item1 {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 9;
+}
+
+.item2 {
+    grid-column: 4 / span 3;
+    grid-row: 1 / span 4;
+}
+
+.item3 {
+    grid-column: 4 / span 3;
+    grid-row: 5 / span 5;
+}
+
+.item4 {
+    grid-column: 7 / span 3;
+    grid-row: 1 / span 3;
+}
+
+.item5 {
+    grid-column: 7 / span 3;
+    grid-row: 4 / span 7;
 }
